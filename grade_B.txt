@@ -33,4 +33,3 @@ Submit score
 
 Show grade
     Wait Until Page Contains    Your grade is B
-    Close Browser
