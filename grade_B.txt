@@ -1,6 +1,7 @@
 ***Settings***
 Library    Selenium2Library
 
+Suite Setup    Go to web
 Suite Teardown    Close Browser
 Test Template    Flow of cal grade
 
@@ -15,7 +16,6 @@ Check grade lower score of B    70
 ***Keywords***
 Flow of cal grade
     [Arguments]    ${score}
-    Go to web
     Fill score    ${score}
     Submit score
     Show grade
