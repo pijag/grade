@@ -1,0 +1,26 @@
+***Settings***
+Library    Selenium2Library
+
+***Variables***
+
+
+***Testcases***
+Check grade A
+    Go to web
+    Fill score
+    Submit score
+    Show grade
+
+
+***Keywords***
+Go to web
+    Open Browser    www.clockupstudio.com/demo/gradejs
+
+Fill score
+    Input Text    score    100
+
+Submit score
+    Click Button    submit
+
+Show grade
+    Wait Until Page Contains    A
