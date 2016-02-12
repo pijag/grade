@@ -23,4 +23,4 @@ Submit score
     Click Button    submit
 
 Show grade
-    Wait Until Page Contains    A
+    Wait Until Page Contains    Grade A
