@@ -1,0 +1,40 @@
+***Settings***
+Library    Selenium2Library
+
+Suite Teardown    Close Browser
+Test Template    Flow of cal grade
+
+***Variables***
+
+
+***Testcases***
+Check grade upper score of A    100
+Check grade mid score of A    85
+Check grade lower score of A    80
+
+
+
+
+***Keywords***
+Flow of cal grade
+    [Arguments]    ${score}
+    Go to web
+    Fill score    ${score}
+    Submit score
+    Show grade
+
+Go to web
+    Open Browser    http://www.clockupstudio.com/demo/gradejs
+
+Fill score
+    [Arguments]    ${score}
+    Input Text    score    ${score}
+
+
+Submit score
+    Click Button    submit
+
+Show grade
+    Wait Until Page Contains    Your grade is A
+    Close Browser
+
