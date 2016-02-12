@@ -1,0 +1,35 @@
+***Settings***
+Library    Selenium2Library
+
+Suite Setup    Go to web
+Suite Teardown    Close Browser
+Test Template    Flow of cal grade
+
+***Variables***
+
+
+***Testcases***
+Check grade upper score of C    69
+Check grade mid score of C    65
+Check grade lower score of C    60
+
+***Keywords***
+Flow of cal grade
+    [Arguments]    ${score}
+    Fill score    ${score}
+    Submit score
+    Show grade
+
+Go to web
+    Open Browser    http://www.clockupstudio.com/demo/gradejs
+
+Fill score
+    [Arguments]    ${score}
+    Input Text    score    ${score}
+
+
+Submit score
+    Click Button    submit
+
+Show grade
+    Wait Until Page Contains    Your grade is C
