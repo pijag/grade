@@ -1,5 +1,6 @@
 ***Settings***
 Library    Selenium2Library
+Suite Teardown    Close Browser
 
 ***Variables***
 
@@ -14,7 +15,7 @@ Check grade A
 
 ***Keywords***
 Go to web
-    Open Browser    www.clockupstudio.com/demo/gradejs
+    Open Browser    http://www.clockupstudio.com/demo/gradejs
 
 Fill score
     Input Text    score    100
@@ -23,4 +24,4 @@ Submit score
     Click Button    submit
 
 Show grade
-    Wait Until Page Contains    Grade A
+    Wait Until Page Contains    Your grade is A

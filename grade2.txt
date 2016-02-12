@@ -35,6 +35,6 @@ Submit score
     Click Button    submit
 
 Show grade
-    Wait Until Page Contains    Grade A
+    Wait Until Page Contains    Your grade is A
     Close Browser
 
